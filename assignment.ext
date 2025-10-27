@@ -1,0 +1,23 @@
+ # Company Details Program
+
+# Dictionary to store company details
+companies = {
+    101: {"name": "Tata Consultancy Services", "location": "Mumbai", "employees": 600000, "revenue": "25B USD"},
+    102: {"name": "Infosys", "location": "Bangalore", "employees": 350000, "revenue": "18B USD"},
+    103: {"name": "Wipro", "location": "Bangalore", "employees": 250000, "revenue": "12B USD"},
+    104: {"name": "Tech Mahindra", "location": "Pune", "employees": 150000, "revenue": "6B USD"},
+    105: {"name": "HCL Technologies", "location": "Noida", "employees": 220000, "revenue": "13B USD"}
+}
+
+# Taking input from the user
+code = int(input("Enter company serial code: "))
+
+# Displaying details
+if code in companies:
+    print("\nCompany Details:")
+    print(f"Name: {companies[code]['name']}")
+    print(f"Location: {companies[code]['location']}")
+    print(f"Employees: {companies[code]['employees']}")
+    print(f"Revenue: {companies[code]['revenue']}")
+else:
+    print("Invalid company serial code! Please try again.")
